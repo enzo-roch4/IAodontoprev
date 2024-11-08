@@ -13,7 +13,7 @@ rf = Roboflow(api_key=api_key)
 project = rf.workspace(workspace_name).project(project_name)
 model = project.version(version).model
 
-def analyze_car_image(image_path):
+def analyze_image(image_path):
     # Carregar imagem
     image = cv2.imread(image_path)
     image_rgb = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
@@ -41,4 +41,4 @@ def analyze_car_image(image_path):
     cv2.destroyAllWindows()
 
 # Teste com uma imagem de exemplo
-analyze_car_image("caminho/para/sua/imagem.jpg")
+analyze_image("caminho/para/sua/imagem.jpg")
