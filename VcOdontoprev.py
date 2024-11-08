@@ -41,4 +41,4 @@ def analyze_image(image_path):
     cv2.destroyAllWindows()
 
 # Teste com uma imagem de exemplo
-analyze_image("caminho/para/sua/imagem.jpg")
+analyze_image("caminho/para/imagem.jpg")
